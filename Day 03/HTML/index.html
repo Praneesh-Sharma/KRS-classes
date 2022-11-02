@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRS Day 03</title>
+    <style>
+        .container{
+            background-color: greenyellow;
+        }
+        .box{
+            display: inline-block;
+            /* float: left; */
+            border: 2px solid blue;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        /*absolute: positions the element relative to the position of its first parent*/
+        #box2{
+            position: absolute;
+            left: 30px;
+            bottom: 30px;
+        }
+        /*relative: positions the element relative to its normal position and will leave a gap at its normal position*/
+        #box3{
+            position: relative;
+            left: 110px;
+            top: 30px;
+        }
+        /*fixed: positions the element relative to the entire webpage, and stays there even while scrolling*/
+        #box5{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        /*sticky: will stick to the screen when you reach its scroll position*/
+        #box6{
+            position: sticky;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box6">6</div>
+    </div>
+</body>
+</html>

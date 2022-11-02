@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics</title>
+    <style>
+        h1 {
+            color: cornflowerblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #A{
+            color:coral;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #B{
+            color: darkgreen;
+        }
+        h2 {
+            color: blueviolet;
+        }
+        .c1{
+            color: darkred;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        div p{
+            background-color:darkolivegreen;
+        }
+        div > p{
+            font-size: xx-large;
+        }
+        body {
+            background-color: teal;
+        }
+        p::first-line{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="
+        color: blanchedalmond; 
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: xx-large;">
+        Hello world!</h1>
+    <!--Inline has more precedence so text appears almond and not blue -->
+    <h1 style="
+        color: paleturquoise;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;">
+        Hello world!</h1>
+
+    <h1>Wassup</h1>
+    <h1 id="A">Heyy</h1>
+
+    <h2 id="A">Cool</h2>
+    <h2 id="B">Heya</h2>
+
+    <h2 class="c1">class1</h2>
+    <h1 class="c1">class2</h1>
+    <!--class and id work same in html and css-->
+    <!--but in javascript, only the first instance of id is considered, while all instances of the same class in considered-->
+    
+    <div>
+        <p>This is paragraph 1</p> <!--child-->
+        <p>This is paragraph 2</p> <!--child-->
+        <section> <!--child-->
+            <p>paragraph inside section</p> <!--decendent-->
+            <!--all childs are decendents but not vice-versa-->
+        </section>
+        <p>This is paragraph 4</p> <!--child-->
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laudantium facilis explicabo quis quae sit laborum magni quam vero inventore quia non, et assumenda aliquid odio vel ab, eligendi ipsum nulla? Sed voluptas illum eos tempore vero nisi consequuntur consectetur possimus quidem, blanditiis nulla voluptate dignissimos repellat eaque qui maxime?</p>
+
+</body>
+
+</html>
