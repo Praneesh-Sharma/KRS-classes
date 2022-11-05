@@ -123,3 +123,26 @@ function sum_args(num1, num2) {
 }
 var sum = sum_args(1,2);
 console.log(sum);
+
+//for loops
+for(var a=0; a<5; a+=1) {
+    console.log(a);
+}
+var students = ["Peter", "Mary", "Joseph", "John", "Charles"];
+for(var a=0; a<students.length; a+=1) {
+    console.log(students[a]);
+}
+
+//Ternary if: another way of writing conditionals.
+//The syntax is: Condition ? code to be executed if true : code to be executed if false;
+var name = "";
+console.log(name ? "The name is " + name : "The name has not been informed");
+
+var gVar = 31;
+function myFunc() {
+    var gVar = 200;
+    console.log(gVar);
+    console.log(this.gVar);
+}
+myFunc();
+

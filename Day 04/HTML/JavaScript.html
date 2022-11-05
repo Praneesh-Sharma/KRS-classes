@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRS Day 04</title>
+</head>
+<body>
+    <h2>JavaScript HTML DOM</h2>
+
+    <div id="main">
+        <p>Finding HTML elements by tag name</p>
+        <p></p>This example demonstrates the <b>getElementsByTagline</b> method.</p>
+    </div>
+
+    <p id="demo"></p>
+
+    <script>
+        const x = document.getElementById("main");
+        const y= x.getElementsByTagName("p");
+        y[0].innerHTML="change";
+        y[0].innerHTML = y.length;
+        // document.getElementById("demo").innerHTML="garbage"
+    </script>
+
+</body>
+</html>

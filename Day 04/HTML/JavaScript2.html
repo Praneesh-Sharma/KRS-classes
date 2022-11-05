@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRS Day 04</title>
+</head>
+<body>
+    <h2>JavaScript HTML DOM</h2>
+
+    <div id="main">
+        <p class="a">Finding HTML elements by tag name</p>
+        <p class="a">This example demonstrates the <b>getElementsByTagline</b> method.</p>
+        <p class="a">Finding HTML elements by tag name</p>
+        <p class="a">Finding HTML elements by tag name</p>
+        <p class="a">Finding HTML elements by tag name</p>
+    </div>
+
+    <img id="image" src="https://images.unsplash.com/photo-1661961111184-11317b40adb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+
+    <p id="demo"></p>
+
+    <script>
+        const z=document.getElementsByClassName("a");
+        // z[1].innerHTML="change";
+        for(var i=0; i<z.length; i++){
+            z[i].innerHTML="change";
+        }
+
+        document.getElementById("image").src = "https://images.unsplash.com/photo-1667524607592-ee957a06df33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80";
+        document.getElementById("image").width="350";
+
+        var obj=document.getElementById("image");
+        obj.src = "https://images.unsplash.com/photo-1667524607592-ee957a06df33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+        obj.width = "250";
+    </script>
+
+</body>
+</html>
