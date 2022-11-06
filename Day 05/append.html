@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append</title>
+</head>
+<body>
+    <h2>JavaScript HTML DOM</h2>
+    <p>Add a new HTML element</p>
+    <div id="div1">
+        <p id="p1">Paragrah 1</p>
+        <p id="p2">Paragraph 2</p>
+    </div>
+
+    <script>
+        const para = document.createElement("p");
+        const node1 = document.createTextNode("This is new.");
+        para.appendChild(node1);
+        const node2 = document.createTextNode("This is new too.");
+        para.appendChild(node2);
+        para.style.color="teal";
+        const element = document.getElementById("div1");
+        element.appendChild(para);
+    </script>
+</body>
+</html>

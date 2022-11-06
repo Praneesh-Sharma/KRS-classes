@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations 2</title>
+</head>
+<body>
+    <h2>JavaScript HTML Events</h2>
+    Enter your name <input type="text" id="fname" onchange="uppercase()">
+
+    <script>
+        function uppercase(){
+            const x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+            document.getElementById("fname").style.backgroundColor = "green";
+        }
+    </script>
+</body>
+</html>
