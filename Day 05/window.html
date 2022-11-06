@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window</title>
+</head>
+<body>
+    <button type="button" id="b" onclick="demo()">Click to go back</button>
+    <!-- clicking this button will take you a page back -->
+    <button type="button" id="b" onclick="test()">Click to go ahead</button>
+    <!-- clicking this button will take you to next page -->
+    <script>
+        console.log('InnerWidth',window.innerWidth);
+        console.log('InnerHeight', window.innerHeight);
+        console.log('AvailHeight', screen.availHeight);
+        console.log('AvailWidth', screen.availWidth);
+        console.log('Location', window.location.href);
+        console.log('Host',window.location.hostname)
+
+        function demo(){
+            window.history.back();
+        }
+        function test(){
+            window.history.forward();
+        }
+
+    </script>
+</body>
+</html>
