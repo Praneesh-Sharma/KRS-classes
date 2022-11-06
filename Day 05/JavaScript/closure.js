@@ -2,3 +2,15 @@
 // with references to its surrounding state (the lexical environment). In other words,
 // a closure gives you access to an outer function's scope from an inner function.
 
+function x(){
+    var a=7;
+    function y(){
+        console.log(a); //7
+    }
+    // y();
+    return y
+}
+x()
+var z=x()
+console.log(z)
+z()
