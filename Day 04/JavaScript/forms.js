@@ -9,7 +9,7 @@ function printError(elemId, hintMsg) {
 function validateForm() {
   // Retrieving the values of form elements
   var form=document.getElementById("myform")
-  var name = form.fullname.value;
+  var name = form.name.value;
   var email = form.email.value;
   var mobile =form.mobile.value;
   var gender =form.gender.value;
@@ -52,7 +52,7 @@ function validateForm() {
     printError("emailErr", "Please enter your email address");
   } else {
     // Regular expression for basic email validation
-    if (email.includes("@")) {
+    if (!email.includes("@")) {
       printError("emailErr", "Please enter a valid email address");
     } else {
       printError("emailErr", "");
