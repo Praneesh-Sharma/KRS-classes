@@ -11,8 +11,8 @@ function validateForm() {
   var form=document.getElementById("myform")
   var name = form.name.value;
   var email = form.email.value;
-  var mobile =form.mobile.value;
-  var gender =form.gender.value;
+  var mobile = form.mobile.value;
+  var gender = form.gender.value;
   var country = form.country.value;
   var hobbies = [];
 
