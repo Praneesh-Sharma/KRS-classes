@@ -145,4 +145,3 @@ function myFunc() {
     console.log(this.gVar);
 }
 myFunc();
-
